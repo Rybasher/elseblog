@@ -1,0 +1,10 @@
+from django.http import HttpResponse
+from django.shortcuts import render
+
+
+def posts_list(request):
+    n = 'kirill'
+    return render(request, 'blog/index.html', {'n':n})
+
+def hello(request):
+    return HttpResponse('<h1>Hello</h1>')
